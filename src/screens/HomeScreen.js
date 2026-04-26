@@ -1,15 +1,7 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  ActivityIndicator,
-  RefreshControl,
-  TouchableOpacity,
-  Image,
-  StyleSheet,
-} from 'react-native';
-import api from '../services/api';
+import React, { useEffect, useState, useCallback } from "react";
+import { View, Text, FlatList, ActivityIndicator, RefreshControl, TouchableOpacity, Image, StyleSheet, } from "react-native";
+import api from "../services/api";
+import MealCard from "../components/MealCard";
 
 export default function HomeScreen({ navigation }) {
   const [data, setData] = useState([]);
@@ -20,7 +12,7 @@ export default function HomeScreen({ navigation }) {
   const fetchData = async () => {
     try {
       setError(false);
-      const response = await api.get('categories.php');
+      const response = await api.get("categories.php");
       setData(response.data.categories);
     } catch (err) {
       setError(true);
@@ -52,44 +44,53 @@ export default function HomeScreen({ navigation }) {
   }
 
   return (
+  <View style={{ flex: 1 }}>
+    <Text style={styles.header}>ResepKita by Zulfikar</Text>
     <FlatList
       data={data}
       keyExtractor={(item) => item.idCategory}
-      refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
       renderItem={({ item }) => (
-        <TouchableOpacity
-          style={styles.card}
-          onPress={() => navigation.navigate('Detail', { category: item.strCategory, })}
-        >
-          <Image source={{ uri: item.strCategoryThumb }} style={styles.image} />
-          <Text style={styles.title}>{item.strCategory}</Text>
-        </TouchableOpacity>
+        <MealCard
+          item={item}
+          onPress={() =>
+            navigation.navigate("Detail", {
+              category: item.strCategory,
+            })
+          }
+        />
       )}
     />
+  </View>
   );
 }
 
 const styles = StyleSheet.create({
+  header: {
+  fontSize: 20,
+  fontWeight: "bold",
+  marginTop: 20,
+  marginHorizontal: 15,
+ },
   card: {
     margin: 10,
     padding: 10,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 10,
     elevation: 3,
   },
   image: {
-    width: '100%',
+    width: "100%",
     height: 150,
     borderRadius: 10,
   },
   title: {
     marginTop: 10,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 16,
   },
   center: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
