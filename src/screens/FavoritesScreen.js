@@ -22,34 +22,40 @@ export default function FavoritesScreen({ navigation }) {
     );
   }
 
-  return (
+
+ return (
+  <View style={{ flex: 1 }}>
+    <Text style={styles.header}>Favorit Saya</Text>
     <FlatList
       data={state.favorites}
       keyExtractor={(item) => item.idMeal}
       renderItem={({ item }) => (
         <View>
           <MealCard
-            item={item} onPress={() => navigation.navigate("Detail", { category: item.strCategory, })}
+            item={item}
+            onPress={() =>
+              navigation.navigate("Detail", {
+                id: item.idMeal,
+              })
+            }
           />
-          <TouchableOpacity
-            style={styles.btn}
-            onPress={() => handleRemoveFavorite(item.idMeal)}
-          >
-            <Ionicons name="trash" size={16} color="#fff" />
-            <Text style={styles.btnText}> Hapus</Text>
-          </TouchableOpacity>
+             <TouchableOpacity
+              style={styles.btn}
+              onPress={() => handleRemoveFavorite(item.idMeal)}
+            >
+              <Ionicons name="trash" size={16} color="#fff" />
+              <Text style={styles.btnText}> Hapus</Text>
+            </TouchableOpacity>
         </View>
       )}
     />
-  );
+  </View>
+ );
 }
 
 const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
+  header: { fontSize: 20, fontWeight: "bold", marginTop: 50, marginHorizontal: 15,},
+  center: { flex: 1, justifyContent: "center", alignItems: "center",},
   btn: {
     width: "26%",
     flexDirection: "row",
@@ -62,9 +68,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  btnText: {
-    color: "#fff",
-    marginLeft: 5,
-    fontWeight: "bold",
-  },
+  btnText: { color: "#fff", marginLeft: 5, fontWeight: "bold",},
 });

@@ -53,7 +53,7 @@ export default function HomeScreen({ navigation }) {
         <MealCard
           item={item}
           onPress={() =>
-            navigation.navigate("Detail", {
+            navigation.navigate("Browse", {
               category: item.strCategory,
             })
           }
@@ -65,32 +65,9 @@ export default function HomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  header: {
-  fontSize: 20,
-  fontWeight: "bold",
-  marginTop: 20,
-  marginHorizontal: 15,
- },
-  card: {
-    margin: 10,
-    padding: 10,
-    backgroundColor: "#fff",
-    borderRadius: 10,
-    elevation: 3,
-  },
-  image: {
-    width: "100%",
-    height: 150,
-    borderRadius: 10,
-  },
-  title: {
-    marginTop: 10,
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-  center: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
+  header: { fontSize: 20, fontWeight: "bold", marginTop: 50, marginHorizontal: 15,},
+  card: { margin: 10, padding: 10, backgroundColor: "#fff", borderRadius: 10, elevation: 3, },
+  image: { width: "100%", height: 150, borderRadius: 10,},
+  title: { marginTop: 10, fontWeight: "bold", fontSize: 16, },
+  center: { flex: 1, justifyContent: "center", alignItems: "center", },
 });
