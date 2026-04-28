@@ -61,12 +61,12 @@ npx expo start
 ## Screenshot Preview
 
 <p>
-  <img src="screenshots/homescreen.jpg" width="250" style="margin-right:10px;"/>
-  <img src="screenshots/browsescreen.jpg" width="250" style="margin-right:10px;"/>
-  <img src="assets/detailsscreen.jpg" width="250" style="margin-right:10px;"/>
-  <img src="screenshots/favoritescreen.jpg" width="250" style="margin-right:10px;"/>
-  <img src="screenshots/searcbscreen.jpg" width="250" style="margin-right:10px;"/>
-  <img src="screenshots/aboutscreen.jpg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/homescreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/browsescreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="assets/detailsscreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/favoritescreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/searcbscreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/aboutscreen.jpeg" width="250" style="margin-right:10px;"/>
 </p>
 
 ## Video Demo
