@@ -71,7 +71,7 @@ npx expo start
 
 ## Video Demo
 Link demo aplikasi:
-https://your-video-link.com
+https://youtu.be/-PPQq_XHFXI
 
 ---
 
