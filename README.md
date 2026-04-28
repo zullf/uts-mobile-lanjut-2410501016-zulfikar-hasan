@@ -63,9 +63,9 @@ npx expo start
 <p>
   <img src="screenshots/homescreen.jpeg" width="250" style="margin-right:10px;"/>
   <img src="screenshots/browsescreen.jpeg" width="250" style="margin-right:10px;"/>
-  <img src="assets/detailsscreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/detailscreen.jpeg" width="250" style="margin-right:10px;"/>
   <img src="screenshots/favoritescreen.jpeg" width="250" style="margin-right:10px;"/>
-  <img src="screenshots/searcbscreen.jpeg" width="250" style="margin-right:10px;"/>
+  <img src="screenshots/searchscreen.jpeg" width="250" style="margin-right:10px;"/>
   <img src="screenshots/aboutscreen.jpeg" width="250" style="margin-right:10px;"/>
 </p>
 
