@@ -23,13 +23,13 @@ Aplikasi ini digunakan untuk melihat kategori makanan, menelusuri resep berdasar
 
  ## Dependencies utama (dari package.json):
 
-- react: ^18.x
-- react-native: ^0.7x
-- expo: ~xx.x.x
-- @react-navigation/native
-- @react-navigation/bottom-tabs
-- @react-navigation/native-stack
-- axios
+- react: 19.2.0
+- react-native: 0.83.6
+- expo: 55.0.17
+- @react-navigation/native : 7.2.2
+- @react-navigation/bottom-tabs : 7.15.9
+- @react-navigation/native-stack : 7.14.11
+- axios : 1.15.2
 
 ---
 
