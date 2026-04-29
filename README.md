@@ -1,4 +1,4 @@
-### ResepKita 
+# ResepKita 
 
 ## Informasi Mahasiswa
 - **Nama** : Zulfikar Hasan  
@@ -70,8 +70,11 @@ npx expo start
 </p>
 
 ## Video Demo
-Link demo aplikasi:
-https://youtu.be/-PPQq_XHFXI
+Link demo aplikasi yotube:
+[Klik untuk menonton video demo Youtube](https://youtu.be/-PPQq_XHFXI)
+
+Link demo drive :
+[Video Drive](https://drive.google.com/file/d/1zTXvd3xc5QYpcWz_vqa-TpGImNRw7R45/view?usp=sharing)
 
 ---
 
